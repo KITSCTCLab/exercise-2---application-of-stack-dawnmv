@@ -87,7 +87,7 @@ class Evaluate:
     for i in expression:
       if i.isnumeric():
         stack.append(int(i))
-      if len(stack)>=2:
+      if len(stack) >= 2:
         if i == '+':
           stack[-2] = stack[-2] + stack[-1]
           stack.pop()
