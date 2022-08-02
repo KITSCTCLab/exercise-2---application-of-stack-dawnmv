@@ -26,9 +26,9 @@ class Evaluate:
     """
       # Write your code here
       if self.top == -1:
-        return True
+         return True
       else:
-        return False
+         return False
 
 
   def pop(self):
@@ -39,7 +39,7 @@ class Evaluate:
     """
     # Write your code here
     if not self.isEmpty():
-      self.stack.pop()  
+       self.stack.pop()  
 
 
   def push(self, operand):
@@ -65,13 +65,13 @@ class Evaluate:
     b = 0
     for element in expression:
       if element.isnumeric():
-        a = a + 1
-        else:
+          a = a + 1
+      else:
           b = b + 1
-        if b == a + 1:
-            return True
-        else:
-          return False
+    if b == a + 1:
+          return True
+    else:
+         return False
 
   def evaluate_postfix_expression(self, expression):
     """
@@ -102,7 +102,7 @@ class Evaluate:
         elif i == '^':
           stack[-2] = stack[-2] ^ stack[-1]
           stack.pop()
-       return int(stack[-1])
+    return int(stack[-1])
 
 
 # Do not change the following code
